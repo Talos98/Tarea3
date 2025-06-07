@@ -1,15 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea3_JosuéCH</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <div id="Fondo">
-         <h2>Fondo</h2>
+    <div id="FondoPrincipal">
+        <header>
+            <div class="header-inner">
+                <h2>Diseño Web Responsivo</h2>
+                <div class="contenedor" id="disenno-responsivo">
+                    <div class="imagen">
+                        <img src= "https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Test Imagen">
+                    </div>
+                    <div class="texto">
+                        <h2>¿Qué es un diseño responsive?</h2>
+                        <p> Es un formato de programación el cual premite ajustar un sitio web automáticamente a las
+                            características
+                            de los dispositivos de los usuarios y sus pantallas.
+                            <br><br>
+                            Algunas características:
+                        <ul>
+                            <li>Se adapta a móviles, tablets y computadoras.</li>
+                            <li>Optimiza la experiencia del usuario.</li>
+                            <li>Evita duplicación de versiones móviles.</li>
+
+
+                            </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="NavegacionPrincipal">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">☰ Menú</label>
+                <nav class="nav-links">
+                    <a href="#diseño-responsivo">Diseño Responsivo</a>
+                    <a href="#viewport">Viewport</a>
+                    <a href="#media-queries">Media Queries</a>
+                    <a href="#imagenes">Galería</a>
+                    <a href="#footer">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <div class="contenedora">
+            <div class="aside">
+                <h2>Video explicativo</h2>
+                <div class="contenido">
+                    <iframe width="100%" height="200"
+                        src="https://www.youtube.com/embed/QKacZRBTcoo?si=Q1zqqeon5FHhZl7b" frameborder="0"
+                        allowfullscreen></iframe>
+                    <p>Video introductorio sobre el diseño web responsive y su importancia.</p>
+                </div>
+            </div>
+            <div class="main">
+                <article id="viewport">
+                    <h2>¿Qué es Viewport?</h2>
+                    <p>El viewport es el área visible de una página web en el navegador del dispositivo. Controlarlo es
+                        clave para lograr adaptabilidad.</p>
+                    <p>Ejemplo de metatiqueta:</p>
+                    <pre><code>&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                </article>
+                <article id="media-queries">
+                    <h2>¿Qué son las Media Queries?</h2>
+                    <p>Son reglas de CSS que permiten aplicar estilos específicos según el tamaño de pantalla.</p>
+                    <p>Ejemplo práctico:</p>
+                    <pre><code>@media (max-width: 768px) {
+                     body {
+                     background-color: lightblue;
+                    }
+                    </code>
+                    </pre>
+                </article>
+            </div>
+        </div>
+        <div class="imagenes" id="imagenes">
+            <div class="img-box">
+                <img src="https://cdn.pixabay.com/photo/2016/02/19/12/37/design-1210160_1280.jpg" alt="Diseño Web responsivo">
+            </div>
+            <div class="img-box">
+                <img src= "https://www.yunbitsoftware.com/blog/wp-content/uploads/2017/06/img-principal-css3-viewport-units-1.png" alt="Viewport">
+            </div>
+            <div class="img-box">
+                <img src= "https://codevivu.com/wp-content/uploads/2020/09/1_tTmsdZ7SjZNhZ90AkkxUHw.png" alt="Medias-queries">
+            </div>
+            <div class="img-box">
+                <img src= "https://upload.wikimedia.org/wikipedia/commons/9/92/Bootstrap_Studio_Logo.png"alt="bootstrap">
+            </div>
+        </div>
+        <footer>
+            <h3>Contacto</h3>
+            <div class="footer-contenido" id="footer">
+                <div class="footer-item">
+                    <p>Autor: Josué Johel Calderón Ch</p>
+                    <p>Curso: Diseño de Aplicaciones Web</p>
+                </div>
+                <div class="footer-item">
+                    <p>Correo: proyectocalderonch@gmail.com</p>
+                    <p>&copy;2025</p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    
+
 </body>
+
 </html>
